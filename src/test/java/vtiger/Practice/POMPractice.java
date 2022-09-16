@@ -5,6 +5,7 @@ import java.util.concurrent.TimeUnit;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.testng.annotations.Test;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 import vtiger.ObjectRepository.LoginPage;
@@ -28,6 +29,12 @@ public class POMPractice {
 //		lp.getLoginBtn().click();
 		
 		lp.loginToApp("admin", "manager");
+	}
+	
+	@Test
+	public void test()
+	{
+		System.out.println("test");
 	}
 
 }
